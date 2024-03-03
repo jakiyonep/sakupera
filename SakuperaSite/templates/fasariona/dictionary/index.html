@@ -1,0 +1,27 @@
+{% extends "fasariona/common/base.html" %}
+{% load static %}
+
+{% block title %}
+Fasa Riona Dictionary
+{% endblock title %}
+
+{% block content %}
+<div class="container">
+  <h2 class="mt-5">Fasa Riona Dictionary</h2>
+  <div class="mt-5">
+    <form id="dict-search" action="{% url 'fasariona:index' %}" method="POST">
+    {% csrf_token %}
+      <input
+        type="text"
+        class="form-control"
+        name="simple-query"
+        placeholder="Type sekra here..."
+      />
+    </form>
+  </div>
+  <!--Card List-->
+  <div id="word-list" class="mt-5">
+  {% include "fasariona/dictionary/word_list.html" %}
+  <!--END of Card List-->
+</div>
+{% endblock content %}
