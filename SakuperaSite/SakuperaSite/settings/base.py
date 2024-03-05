@@ -121,5 +121,6 @@ sys.path.append(os.path.join(BASE_DIR, 'apps'))
 AUTH_USER_MODEL = "user.User"
 
 # Static
-STATIC_URL = 'static/'
-STATICFILES_DIRS = [BASE_DIR / 'static']
+STATIC_URL = '/static/'
+STATIC_ROOT = '/usr/share/nginx/html/static'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
