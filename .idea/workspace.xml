@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0bc2ed5-96b5-4cfd-ab0e-65a9661cf5c3" name="Changes" comment="change static_root settings">
+    <list default="true" id="d0bc2ed5-96b5-4cfd-ab0e-65a9661cf5c3" name="Changes" comment="sqlite to maria db. local.py modified">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SakuperaSite/SakuperaSite/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/SakuperaSite/SakuperaSite/settings/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SakuperaSite/SakuperaSite/settings/prod.py" beforeDir="false" afterPath="$PROJECT_DIR$/SakuperaSite/SakuperaSite/settings/prod.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SakuperaSite/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/SakuperaSite/manage.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,13 +110,22 @@
       <option name="project" value="LOCAL" />
       <updated>1709644887009</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="sqlite to maria db. local.py modified">
+      <option name="closed" value="true" />
+      <created>1709648545824</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709648545824</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial" />
     <MESSAGE value="add requirements.txt" />
     <MESSAGE value="change static_root settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="change static_root settings" />
+    <MESSAGE value="sqlite to maria db. local.py modified" />
+    <option name="LAST_COMMIT_MESSAGE" value="sqlite to maria db. local.py modified" />
   </component>
 </project>
