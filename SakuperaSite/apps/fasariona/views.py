@@ -33,7 +33,7 @@ def dictionary(request):
 
 def gwiki(request):
 
-    gwiki_list = WikiNote.objects.all().order_by('-pk')
+    gwiki_list = WikiNote.objects.all().order_by('order_num')
 
     context = {
         "gwiki_list" : gwiki_list,

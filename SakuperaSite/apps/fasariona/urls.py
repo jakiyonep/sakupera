@@ -3,7 +3,6 @@ from .views import *
 
 app_name = 'fasariona'
 
-
 urlpatterns = [
     path("", index, name='index'),
     path("dictionary/", dictionary, name='dictionary'),

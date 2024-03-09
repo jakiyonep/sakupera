@@ -55,6 +55,7 @@ class WikiNote(models.Model):
     content = models.TextField(null=True, blank=True)
     public = models.BooleanField(default=True)
     related_notes = models.ManyToManyField('self', blank=True, related_name="notes_related")
+    order_num = models.IntegerField(null=True, blank=True)
 
     def __str__(self):
         return self.title

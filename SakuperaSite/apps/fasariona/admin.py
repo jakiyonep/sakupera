@@ -22,4 +22,8 @@ admin.site.register(Word, WordAdmin)
 ========== Gwiki ==========
 """
 
-admin.site.register(WikiNote)
+class GwikiAdmin(admin.ModelAdmin):
+    list_display = ('title', 'order_num', 'public')
+    list_editable = ('order_num', 'public')
+
+admin.site.register(WikiNote, GwikiAdmin)
