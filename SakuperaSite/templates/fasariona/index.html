@@ -1,0 +1,40 @@
+{% extends "common/base.html" %}
+{% load static %}
+
+{% block title %}
+Sakupera
+{% endblock title %}
+
+{% block content %}
+<!-- HEADER -->
+{% include 'common/header.html' %}
+<!-- END of HEADER -->
+
+<!-- BREADCRUMB -->
+<div class="py-2">
+  <div class="container d-flex text-white">
+      <a href="{% url 'landing:index' %}" class="text-info text-decoration-none me-1 material-symbols-outlined">
+       home
+      </a>
+      <span class="me-1 material-symbols-outlined">chevron_right</span>
+      <span>Fasa Riona</span>      
+  </div>
+</div>
+<!--END of BREADCRUMB-->
+
+<!-- MAIN -->
+<div class="mt-5">
+  <div class="container">
+    <p class="">Fasa Riona is my own <a href="https://en.wikipedia.org/wiki/Constructed_language" class="text-info">conlang</a> I have been working since the beginning of 2024.</p>
+    <ul class="list-grou list-group-flush">
+      <li class="list-group-item bg-dark">
+        <a href="{% url 'fasariona:dictionary' %}" class="text-info">Dictionary</a>
+      </li>
+      <li class="list-group-item bg-dark">
+        <a href="{% url 'fasariona:gwiki' %}" class="text-info">Grammar Wiki</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- END of MAIN -->
+{% endblock content %}

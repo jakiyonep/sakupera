@@ -3,9 +3,15 @@ from .models import *
 from django.db.models import Q
 
 def index(request):
+    context = {
+        "header_title": "Fasa Riona",
+    }
+
+    return render(request, 'fasariona/index.html', context)
+
+def dictionary(request):
 
     word_list = Word.objects.all().order_by('-pk')
-    print(len(word_list))
 
     if request.POST:
         query = request.POST.get("simple-query")
@@ -17,10 +23,34 @@ def index(request):
                 Q(desc__definition__icontains=query)
             )
 
-    print(len(word_list))
     context = {
         "word_list" : word_list,
+        "header_title": "Dictionary"
     }
 
 
     return render(request, "fasariona/dictionary/index.html", context)
+
+def gwiki(request):
+
+    gwiki_list = WikiNote.objects.all().order_by('-pk')
+
+    context = {
+        "gwiki_list" : gwiki_list,
+        "header_title": "Grammar Wiki"
+    }
+
+
+    return render(request, "fasariona/gwiki/index.html", context)
+
+def gwiki_detail(request, pk):
+
+    gwiki = get_object_or_404(WikiNote, pk=pk)
+
+    context = {
+        "gwiki" : gwiki,
+        "header_title": gwiki.title
+    }
+
+
+    return render(request, "fasariona/gwiki/detail.html", context)

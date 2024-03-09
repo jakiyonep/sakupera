@@ -5,5 +5,8 @@ app_name = 'fasariona'
 
 
 urlpatterns = [
-    path("dictionary/", index, name='index'),
+    path("", index, name='index'),
+    path("dictionary/", dictionary, name='dictionary'),
+    path("gwiki/", gwiki, name='gwiki'),
+    path("gwiki/<int:pk>/", gwiki_detail, name='gwiki_detail'),
 ]

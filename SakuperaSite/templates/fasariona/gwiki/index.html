@@ -20,26 +20,22 @@ Fasa Riona Dictionary
       <span class="me-1 material-symbols-outlined">chevron_right</span>
       <a href="{% url 'fasariona:index' %}" class="text-info text-decoration-none me-1">Fasa Riona</a>
       <span class="me-1 material-symbols-outlined">chevron_right</span>
-      <span>Dictionary</span>      
+      <span>Gwiki</span>      
   </div>
 </div>
 <!--END of BREADCRUMB-->
 
 <div class="container">
   <div class="mt-5">
-    <form id="dict-search" action="{% url 'fasariona:dictionary' %}" method="POST">
-    {% csrf_token %}
-      <input
-        type="text"
-        class="form-control"
-        name="simple-query"
-        placeholder="Type sekra here..."
-      />
-    </form>
   </div>
   <!--Card List-->
-  <div id="word-list" class="mt-5">
-  {% include "fasariona/dictionary/word_list.html" %}
+    <ul class="list-grou list-group-flush">
+      {% for wiki in gwiki_list %}
+      <li class="list-group-item bg-dark">
+        <a href="{% url 'fasariona:gwiki_detail' wiki.pk %}" class="text-info">{{wiki.title}}</a>
+      </li>
+      {% endfor %}
+    </ul>
   <!--END of Card List-->
 </div>
 {% endblock content %}

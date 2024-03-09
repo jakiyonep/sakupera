@@ -1,3 +1,31 @@
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-light-black: rgb(37, 34, 34);
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  }
+
 body{
     font-family: "Helvetica Neue", Helvetica, Arial, "游ゴシック体", "Yu Gothic",
     YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
@@ -5,4 +33,41 @@ body{
 
 .container{
     max-width: 800px;
+}
+.content * {
+    margin: 1.5em 0;
+}
+.content h2{
+    font-size: 2.0em;
+    margin: 1em 0;
+}
+.content table {
+    margin: 2em 0;
+}
+.content table thead {
+    border-bottom: 1px solid var(--bs-gray);
+}
+.content table tbody tr td {
+    padding-right: 2em;
+}
+.content table tbody tr td:last-child {
+    padding-right: 0;
+}
+.content .codehilite {
+    background-color: var(--bs-light-black);
+    padding: 1em;
+}
+.content .codehilite pre{
+    margin: 0;
+}
+.content .admonition.note {
+    background-color: rgb(40, 49, 45);
+    padding: 1em;
+}
+.content .admonition .admonition-title{
+    margin:0;
+    font-size: 1.3em;
+}
+.content .admonition li{
+    margin: 0.5em 0 0 0;
 }

@@ -48,6 +48,9 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            'libraries': {
+                'to_markdown': 'templatetags.markdown'  # 追記
+            }
         },
     },
 ]

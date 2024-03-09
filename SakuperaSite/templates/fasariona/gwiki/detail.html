@@ -1,5 +1,6 @@
 {% extends "common/base.html" %}
 {% load static %}
+{% load to_markdown %}
 
 {% block title %}
 Fasa Riona Dictionary
@@ -20,26 +21,14 @@ Fasa Riona Dictionary
       <span class="me-1 material-symbols-outlined">chevron_right</span>
       <a href="{% url 'fasariona:index' %}" class="text-info text-decoration-none me-1">Fasa Riona</a>
       <span class="me-1 material-symbols-outlined">chevron_right</span>
-      <span>Dictionary</span>      
+      <a href="{% url 'fasariona:gwiki' %}" class="text-info text-decoration-none me-1">Gwiki</a>
+      <span class="me-1 material-symbols-outlined">chevron_right</span>
+      <span>{{gwiki.title}}</span>
   </div>
 </div>
 <!--END of BREADCRUMB-->
 
-<div class="container">
-  <div class="mt-5">
-    <form id="dict-search" action="{% url 'fasariona:dictionary' %}" method="POST">
-    {% csrf_token %}
-      <input
-        type="text"
-        class="form-control"
-        name="simple-query"
-        placeholder="Type sekra here..."
-      />
-    </form>
-  </div>
-  <!--Card List-->
-  <div id="word-list" class="mt-5">
-  {% include "fasariona/dictionary/word_list.html" %}
-  <!--END of Card List-->
+<div class="content container mt-5">
+  {{gwiki.content|to_markdown|safe}}
 </div>
 {% endblock content %}
