@@ -2,7 +2,7 @@ from .base import *
 env = environ.Env()
 env.read_env(os.path.join(BASE_DIR, '.env'))
 DEBUG = False
-ALLOWED_HOSTS = ['sakupera.com']
+ALLOWED_HOSTS = ['www.sakupera.com']
 
 SECRET_KEY = env('SECRET_KEY')
 

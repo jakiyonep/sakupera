@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0bc2ed5-96b5-4cfd-ab0e-65a9661cf5c3" name="Changes" comment="Modified some front-end stuff">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SakuperaSite/SakuperaSite/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/SakuperaSite/SakuperaSite/wsgi.py" afterDir="false" />
+    <list default="true" id="d0bc2ed5-96b5-4cfd-ab0e-65a9661cf5c3" name="Changes" comment="Modified wsgi settings from local to prod">
+      <change beforePath="$PROJECT_DIR$/SakuperaSite/SakuperaSite/settings/prod.py" beforeDir="false" afterPath="$PROJECT_DIR$/SakuperaSite/SakuperaSite/settings/prod.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710081191064</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Modified wsgi settings from local to prod">
+      <option name="closed" value="true" />
+      <created>1710081762500</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1710081762500</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,6 +212,7 @@
     <MESSAGE value="Added a order_num to the gwiki note model, so that the order of the list displayed on the front end can be edited" />
     <MESSAGE value="Dictionary Detail" />
     <MESSAGE value="Modified some front-end stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modified some front-end stuff" />
+    <MESSAGE value="Modified wsgi settings from local to prod" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified wsgi settings from local to prod" />
   </component>
 </project>
