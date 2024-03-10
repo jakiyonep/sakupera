@@ -39,7 +39,14 @@ Fasa Riona Dictionary
   </div>
   <!--Card List-->
   <div id="word-list" class="mt-5">
-  {% include "fasariona/dictionary/word_list.html" %}
+  {% if word_list %} <!-- if index-->
+    {% for word in word_list %}
+      {% include "fasariona/dictionary/word_card.html" %}
+    {% endfor %}
+  {% else %} <!-- if detail -->
+    {% include "fasariona/dictionary/word_card.html" %}
+  {% endif %}
+  </div>
   <!--END of Card List-->
 </div>
 {% endblock content %}

@@ -6,12 +6,16 @@ Sakupera
 {% endblock title %}
 
 {% block content %}
+
+<!-- HEADER -->
+{% include 'common/header.html' %}
+<!-- END of HEADER -->
+
 <div class="container">
-  <h2 class="mt-5">Sakupera</h2>
-  <p class="mt-3">Here are some garbage works of mine. </p>
-  <ul class="list-group list-group-flush ">
-    <li class="list-group-item bg-dark">
-      <a href="{% url 'fasariona:index' %}" class="text-white">Fasa Riona</a>
+  <p class="mt-5">Here are some garbage works of mine. </p>
+  <ul class="">
+    <li class="">
+      <a href="{% url 'fasariona:index' %}" class="">Fasa Riona</a>
     </li>
   </ul>
 </div>

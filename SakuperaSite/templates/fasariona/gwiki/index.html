@@ -29,9 +29,9 @@ Fasa Riona Dictionary
   <div class="mt-5">
   </div>
   <!--Card List-->
-    <ul class="list-grou list-group-flush">
+    <ul class="">
       {% for wiki in gwiki_list %}
-      <li class="list-group-item bg-dark">
+      <li class="">
         <a href="{% url 'fasariona:gwiki_detail' wiki.pk %}" class="text-info">{{wiki.title}}</a>
       </li>
       {% endfor %}

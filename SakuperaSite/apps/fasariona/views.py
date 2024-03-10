@@ -28,8 +28,18 @@ def dictionary(request):
         "header_title": "Dictionary"
     }
 
+    return render(request, "fasariona/dictionary/index.html", context)
+
+def dictionary_detail(request, pk):
+    word = get_object_or_404(Word, pk=pk)
+
+    context = {
+        'header_title': "Dictionary",
+        'word': word,
+    }
 
     return render(request, "fasariona/dictionary/index.html", context)
+
 
 def gwiki(request):
 
