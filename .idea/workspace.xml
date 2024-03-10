@@ -4,21 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0bc2ed5-96b5-4cfd-ab0e-65a9661cf5c3" name="Changes" comment="Added a order_num to the gwiki note model, so that the order of the list displayed on the front end can be edited">
+    <list default="true" id="d0bc2ed5-96b5-4cfd-ab0e-65a9661cf5c3" name="Changes" comment="Dictionary Detail">
+      <change afterPath="$PROJECT_DIR$/SakuperaSite/apps/fasariona/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SakuperaSite/apps/fasariona/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/SakuperaSite/apps/fasariona/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SakuperaSite/apps/fasariona/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/SakuperaSite/apps/fasariona/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SakuperaSite/apps/landing/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/SakuperaSite/apps/landing/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SakuperaSite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/SakuperaSite/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SakuperaSite/static/sakupera/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/SakuperaSite/static/sakupera/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SakuperaSite/static/sakupera/js/riona.js" beforeDir="false" afterPath="$PROJECT_DIR$/SakuperaSite/static/sakupera/js/riona.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SakuperaSite/templates/common/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/SakuperaSite/templates/common/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SakuperaSite/templates/common/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/SakuperaSite/templates/common/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SakuperaSite/templates/fasariona/dictionary/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/SakuperaSite/templates/fasariona/dictionary/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SakuperaSite/templates/fasariona/dictionary/word_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SakuperaSite/templates/fasariona/gwiki/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/SakuperaSite/templates/fasariona/gwiki/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SakuperaSite/templates/fasariona/dictionary/word_card.html" beforeDir="false" afterPath="$PROJECT_DIR$/SakuperaSite/templates/fasariona/dictionary/word_card.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SakuperaSite/templates/fasariona/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/SakuperaSite/templates/fasariona/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SakuperaSite/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/SakuperaSite/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +155,23 @@
       <option name="project" value="LOCAL" />
       <updated>1709993702455</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Dictionary Detail">
+      <option name="closed" value="true" />
+      <created>1710030039129</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1710030039129</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Dictionary Detail">
+      <option name="closed" value="true" />
+      <created>1710030046841</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1710030046841</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -172,6 +182,7 @@
     <MESSAGE value="Configured setting files" />
     <MESSAGE value="Added gwiki, and some style modifications" />
     <MESSAGE value="Added a order_num to the gwiki note model, so that the order of the list displayed on the front end can be edited" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a order_num to the gwiki note model, so that the order of the list displayed on the front end can be edited" />
+    <MESSAGE value="Dictionary Detail" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dictionary Detail" />
   </component>
 </project>

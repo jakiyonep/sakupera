@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_object_or_404
+from .forms import *
 from .models import *
 from django.db.models import Q
 
@@ -40,6 +41,19 @@ def dictionary_detail(request, pk):
 
     return render(request, "fasariona/dictionary/index.html", context)
 
+def get_word_form(request, pk):
+    word = get_object_or_404(Word, pk=pk)
+
+    form = WordForm(instance=word)
+
+
+    context = {
+        'header_title': "Dictionary",
+        'word': word,
+        'form': form,
+    }
+
+    return render(request, "fasariona/dictionary/index.html", context)
 
 def gwiki(request):
 
@@ -61,6 +75,5 @@ def gwiki_detail(request, pk):
         "gwiki" : gwiki,
         "header_title": gwiki.title
     }
-
 
     return render(request, "fasariona/gwiki/detail.html", context)

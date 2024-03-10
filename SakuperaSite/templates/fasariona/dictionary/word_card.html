@@ -1,4 +1,4 @@
-
+{% if word %}
 <!--Word Card-->
 <div class="card bg-dark text-white p-2 mt-4 shadow-lg">
   <!--Word Head-->
@@ -7,6 +7,9 @@
       <a class="fs-4 " href="{% url 'fasariona:dictionary_detail' word.pk %}">{{word.word}}</a>
     </div>
     <div class="d-flex align-items-start justify-content-end">
+      {% if user.is_authenticated %}
+        <span class="word-edit-btn bg-primary text-white d-inline-block px-1 rounded material-symbols-outlined">edit</span>
+      {% endif %}
       <span class="px-2">{{word.pk}}</span>
     </div>
   </div>
@@ -66,3 +69,4 @@
     <!--END of Related Words-->
 </div>
 <!--END of Word Card-->
+{% endif %}
