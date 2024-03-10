@@ -4,16 +4,16 @@ env.read_env(os.path.join(BASE_DIR, '.env'))
 DEBUG = True
 ALLOWED_HOSTS = ['*']
 
-SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY = env.get_value.get_value('SECRET_KEY')
 
 DATABASES = {
     'default': {
-        'ENGINE': env('DB_ENGINE'),
-        'NAME': env('DB_NAME'),
-        'USER': env('DB_USER'),
-        'PASSWORD': env('DB_PW'),
-        'HOST': env('DB_HOST'),
-        'PORT': env('DB_PORT'),
+        'ENGINE': env.get_value('DB_ENGINE'),
+        'NAME': env.get_value('DB_NAME'),
+        'USER': env.get_value('DB_USER'),
+        'PASSWORD': env.get_value('DB_PW'),
+        'HOST': env.get_value('DB_HOST'),
+        'PORT': env.get_value('DB_PORT'),
     }
 }
 
